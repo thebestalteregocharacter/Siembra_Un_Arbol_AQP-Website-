@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('gallery.css');
+@import url('animations.css');
+@import url('themes.css');
+@import url('home.css');
+@import url('timeline.css');
+*{
+    border: none;
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+:root{
+    --color1: #47ff93;
+    --color2: #00ff7b;
+    --bg-color: #efefed;
+    --font-black: #0f0f0f;
+    --font-white: #f0f0f0;
+    --nav-bg-color:  #ffffff4f;
+
+    --font1: 4rem;
+    --font2: 3rem;
+    --font3: 2rem;
+    --font4: 1.5rem;
+    --font5: 1.2rem;
+}
+body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--font-white);  
+    background-image: url("../media/aqp.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-attachment: fixed;
+}
+h1,h2,.author,.author a{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--font-white);
+}
+h3,h4,h5,h6,a,span{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--font-black);
+}
+p{
+    font-family: 'Poppins', sans-serif;
+}
+body .hgroup{
+    margin-top: 3rem;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2rem;
+    color: var(--font-white);
+}
+body .hgroup h1{
+    font-size: var(--font1);
+    margin: 3rem 1rem 1rem 1rem;
+}
+body .hgroup h2{
+    font-size: var(--font3);
+    margin: 2rem 1rem 3rem 1rem;
+}
+body nav{
+    background-color:  var(--nav-bg-color);
+    width:80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+nav h3, nav a{
+    display: inline-block;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 1rem;
+}
+body nav h3{
+    color: var(--font-black);
+    background-color: var(--bg-color);
+}
+body nav a{
+    color: var(--font-white);
+    background-color: #fff0;
+}
+body nav a:hover{
+    color: var(--font-black);
+    background-color: #fff5 ;
+}
+.nav__a__icon{
+    display: none;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: var(--color1);
+    background: linear-gradient(90deg, rgba(21,255,134,1) 0%, rgba(71,255,147,1) 20%, rgba(71,255,147,1) 80%, rgba(21,255,134,1) 100%);
+}
+footer .about_us{
+    padding: 2rem 2rem 2rem 2rem;
+    width: 100%;
+}
+footer .about_us h4{
+    text-align: justify;
+    font-size: var(--font4);
+    padding: 0 0 1rem 0;
+}
+footer .about_us p{
+    text-align: justify;
+    font-size: var(--font5);
+}
+footer .contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.contact a i {
+    font-size: var(--font2);
+    color: var(--font-black);
+    margin-bottom: 2.5rem;
+}
+.contact a i:hover {
+    color: var(--font-white);
+}
+.author{
+    width: 100%;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+@media (min-width:700px){
+    body .hgroup h1{
+        font-size: var(--font1);
+    }
+    .sub_articles_container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .sub_articles_container .column1, .sub_articles_container .column2{
+        width: 47%;
+    }
+    .sub_articles_container .column1 article, .sub_articles_container .column2 article{
+        width: 100%;
+    }
+    footer{
+        justify-content: space-between;
+    }
+    footer .about_us{
+        padding: 2rem 2rem 4rem 2rem;
+        width: 80%;
+    }
+    footer .contact{
+        width: 10%; 
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .contact a i{
+        margin-right: 2rem;
+        margin-bottom: 0rem;
+    }
+    .about_us{
+        width: 70%;
+        }
+}
+@media (min-width: 1000px){
+    body{
+        background-size: 100% auto;
+    }
+}
+@media (max-width: 520px){
+    :root{
+        --font1: 3.8rem;
+        --font2: 2.8rem;
+        --font3: 1.8rem;
+        --font4: 1.3rem;
+        --font5: 1rem;
+    }
+    .nav__a__icon{
+        display: inline;
+    }
+    .nav__a__text{
+        display: none;
+    }
+}

@@ -1,0 +1,37 @@
+.timeline{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: row-reverse;
+    padding: 2rem;
+}
+.timeline_commit{
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+}
+.commit_icon{
+    width: 10%;
+    display: flex;
+    align-items: center;
+}
+.commit_icon img{
+    width: 100%;
+}
+.commit_text{
+    width: 90%;
+    padding-left: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.commit_text h3, .commit_text p{
+    width: 100%;
+}
+.commit_text h3{
+    padding-top: 1rem;
+}
+.commit_text p{
+    padding-bottom: 1rem;
+    text-align: end;
+}

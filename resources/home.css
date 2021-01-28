@@ -1,0 +1,43 @@
+/*main container*/
+
+body .main_container{
+    width:80%;
+    background-color: var(--bg-color); 
+    margin-bottom: 3rem;
+}
+
+/*articles*/
+
+body .main_container .main_article{
+    padding: 1rem 2rem;
+}
+article h3{
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem 0 0 0;
+}
+article h4{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem 0 0 0;
+}
+article p{
+    padding: 2rem 2rem 0 2rem;
+    text-align: justify;
+    font-size: 1.2rem; 
+}
+.img_container{ 
+    overflow: hidden;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+.main_img{
+    max-width: 550px;
+    width: 100%;
+}
+.article_img{
+    max-width: 550px;
+    width: 100%;
+}

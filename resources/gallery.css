@@ -1,0 +1,22 @@
+.gallery_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 2rem;
+}    
+.gallery_column1,.gallery_column2{
+    width: 100%;
+}
+.gallery_image{
+    width: 100%;
+    padding: 1rem;
+}
+@media (min-width:700px){
+
+    .gallery_column1, .gallery_column2{
+        width: 47%;
+    }
+    .gallery_image{
+        width: 100%;
+    }
