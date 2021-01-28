@@ -31,6 +31,9 @@
 .commit_text h3{
     padding-top: 1rem;
 }
+.commit_text a:hover,.commit_text a h3:hover{
+    color: var(--color2);
+}
 .commit_text p{
     padding-bottom: 1rem;
     text-align: end;

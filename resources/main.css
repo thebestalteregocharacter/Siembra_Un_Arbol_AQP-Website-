@@ -36,9 +36,10 @@ body{
     background-size: auto 100%;
     background-attachment: fixed;
 }
-h1,h2,.author,.author a{
+h1,h2,.help,.help a{
     font-family: 'Montserrat', sans-serif;
     color: var(--font-white);
+    text-decoration: none;
 }
 h3,h4,h5,h6,a,span{
     font-family: 'Montserrat', sans-serif;
@@ -123,7 +124,7 @@ footer .contact{
 .contact a i:hover {
     color: var(--font-white);
 }
-.author{
+.help{
     width: 100%;
     padding-bottom: 2rem;
     text-align: center;
