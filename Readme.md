@@ -9,8 +9,4 @@ CSS(Nativo)
 JavaScript(Nativo)
 
 
-## Author ✒️
-
-PHER(@thebestalteregocharacter)
-
 No se quien eres but pasala bien
